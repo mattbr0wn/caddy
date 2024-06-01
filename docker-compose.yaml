@@ -1,7 +1,9 @@
 services:
   caddy:
     container_name: caddy
-    build: .
+    build:
+      context: ./caddy
+      dockerfile: Dockerfile
     restart: always
     volumes:
       - ./Caddyfile:/etc/caddy/Caddyfile
