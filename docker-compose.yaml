@@ -8,6 +8,8 @@ services:
     volumes:
       - ./Caddyfile:/etc/caddy/Caddyfile
       - ./Caddyfile.plausible:/etc/caddy/Caddyfile.plausible
+      - ./Caddyfile.mateocafe:/etc/caddy/Caddyfile.mateocafe
+      - ../website/web/static:/mateocafe
     networks:
       - fuzzylogic
     ports:
