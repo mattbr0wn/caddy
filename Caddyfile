@@ -1,4 +1,4 @@
 # Caddyfile
 
 import Caddyfile.plausible
-
+import Caddyfile.mateocafe
