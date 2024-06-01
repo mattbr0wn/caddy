@@ -5,6 +5,7 @@ services:
     restart: always
     volumes:
       - ./Caddyfile:/etc/caddy/Caddyfile
+      - ./Caddyfile.plausible:/etc/caddy/Caddyfile.plausible
     networks:
       - fuzzylogic
     ports:

@@ -1,6 +1,3 @@
-analytics.fuzzylogicmedia.com {
-    reverse_proxy * plausible:8000
-    tls {
-        dns cloudflare {env.CLOUDFLARE_API_TOKEN}
-    }
-}
+# Caddyfile
+
+import Caddyfile.plausible
